@@ -57,8 +57,8 @@ function SignedInUserAppbar() {
 					color="primary"
 					style={{ margin: '0 20px' }}
 					onClick={() => {
-						navigate('/courses');
-						// window.location.href = '/courses';
+						// navigate('/courses');
+						window.location.href = '/courses';
 					}}
 				>
 					Courses
@@ -99,8 +99,8 @@ function GuestUserAppbar() {
 					color="primary"
 					style={{ margin: '0 20px' }}
 					onClick={() => {
-						navigate('/login');
-						// window.location.href = '/login';
+						// navigate('/login');
+						window.location.href = '/login';
 					}}
 				>
 					Log In
@@ -109,8 +109,8 @@ function GuestUserAppbar() {
 					variant="contained"
 					color="primary"
 					onClick={() => {
-						navigate('/register');
-						// window.location.href = '/register';
+						// navigate('/register');
+						window.location.href = '/register';
 					}}
 				>
 					Register
