@@ -28,7 +28,7 @@ const app = express();
 // };
 
 // use cors middleware
-// app.use(cors());
+app.use(cors());
 
 // make sever accept payload in json format, using middleware
 app.use(express.json());
