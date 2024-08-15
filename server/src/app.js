@@ -2,7 +2,7 @@
 const express = require('express');
 
 // importing 'cors' for 'strict-origin-when-cross-origin'
-// const cors = require('cors');
+const cors = require('cors');
 
 // importing .env
 require('dotenv').config();
