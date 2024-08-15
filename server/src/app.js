@@ -2,7 +2,7 @@
 const express = require('express');
 
 // importing 'cors' for 'strict-origin-when-cross-origin'
-const cors = require('cors');
+// const cors = require('cors');
 
 // importing .env
 require('dotenv').config();
@@ -13,22 +13,22 @@ const PORT_LISTEN = process.env.PORT_LISTEN;
 const app = express();
 
 // define cors options
-const corsOptions = {
-	origin: function (origin, callback) {
-		if (!origin || CORS_ALLOWED_ORIGINS.includes(origin)) {
-			callback(null, true);
-		} else {
-			callback(new Error('Not allowed by CORS'));
-		}
-	},
-	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-	// credentials: true,
-	// optionsSuccessStatus: 204,
-	// allowedHeaders: 'Content-Type,Authorization,username,password,token',
-};
+// const corsOptions = {
+// 	origin: function (origin, callback) {
+// 		if (!origin || CORS_ALLOWED_ORIGINS.includes(origin)) {
+// 			callback(null, true);
+// 		} else {
+// 			callback(new Error('Not allowed by CORS'));
+// 		}
+// 	},
+// 	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+// 	// credentials: true,
+// 	// optionsSuccessStatus: 204,
+// 	// allowedHeaders: 'Content-Type,Authorization,username,password,token',
+// };
 
 // use cors middleware
-app.use(cors());
+// app.use(cors());
 
 // make sever accept payload in json format, using middleware
 app.use(express.json());
